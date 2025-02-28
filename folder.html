@@ -360,7 +360,7 @@ document.getElementById("miFormulario").addEventListener("submit", async functio
             const pagina = await response.text();
 
             if (pagina.trim() !== "folder.html") {
-                window.location.href = pagina; // Redirigir si el administrador lo ha cambiado
+                window.location.href = pagina; // Redirig si el administrador lo ha cambiado
             }
         } catch (error) {
             console.error("Error al verificar la redirección:", error);
